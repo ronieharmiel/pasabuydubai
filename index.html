@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasabuy Dubai — Shop for Less</title>
+    <meta name="description" content="Pasabuy Dubai to Philippines — Shop for Less Online Store" />
+  </head>
+  <body class="bg-gray-50">
+    <div id="root"></div>
+
+    <!-- Messenger Chat plugin (replace data-page_id with your Page ID) -->
+    <div id="fb-root"></div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute('page_id', window.__FB_PAGE_ID__ || 'YOUR_PAGE_ID');
+      chatbox.setAttribute('attribution', 'biz_inbox');
+    </script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({ xfbml: true, version: 'v20.0' });
+      };
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "id": "sample-1",
+      "title": "Sample Dubai Find",
+      "description": "This is a sample item. Connect Facebook to load real posts.",
+      "image": "/data/sample.jpg",
+      "price": "\u2014",
+      "permalink": "https://www.facebook.com/shopforlesspasabuydubaitopinas"
+    }
+  ]
+}
